@@ -1,49 +1,22 @@
-//array
-
-//public class Array {
-//    public static void main(String[] args) {
-//        int[] numbers = {7,6,4,8,9};
-//        System.out.println("Array elements:");
-//        for (int i = 0; i < numbers.length; i++) {
-//            System.out.print(numbers[i] + " ");
-//        }
-//    }
-//}
-
-//for sorting the array
-import java.util.Arrays;
-
+//create an array to store marks of 5 student and print them using loop.
 public class Array {
     public static void main(String[] args) {
-        int[] numbers = { 7, 6, 4, 8, 9 };
-        System.out.println("Array elements:");
-        for (int i = 0; i < numbers.length; i++) {
-            System.out.print(numbers[i] + " ");
+
+        // create an array to store 5 marks of students
+
+        int[] marks = { 40, 50, 45, 89, 67};
+
+        // step 2; print heading
+        System.out.println("Marks of 5 students");
+
+        // step 3; use for loop to access each element of array
+
+        for (int i = 0; i < marks.length; i++) {
+
+            // step 4 print student number and corresponding marks
+
+            System.out.println("Student" + (i + 1) + "Marks =" + marks[i]);
         }
-        Arrays.sort(numbers);
-        System.out.println("\n Sorted array:");
-        for (int i = 0; i < numbers.length; i++) {
-            System.out.print(numbers[i] + " ");
-        }
+
     }
 }
-
-// for searching an element in the array
-// import java.util.Arrays;
-// import java.util.Scanner;
-// public class Array {
-// public static void main(String[] args) {
-// int[] numbers = { 7, 6, 4, 8, 9 };
-// System.out.println("Array elements:");
-// for (int i = 0; i < numbers.length; i++) {
-// System.out.print(numbers[i] + " ");
-// }
-// int key = 4;
-// int index = Arrays.binarySearch(numbers, key);
-// if (index >= 0) {
-// System.out.println("\nElement " + key + " found at index: " + index);
-// } else {
-// System.out.println("\nElement " + key + " not found in the array.");
-// }
-// }
-// }
